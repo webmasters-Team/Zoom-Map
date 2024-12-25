@@ -1,0 +1,92 @@
+:root {
+    --font: Arial, Helvetica, serif;
+      --black: #111;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: radial-gradient(#333, #000);
+  }
+  
+  .az-wrap, .az-small, .az-large {
+      position: relative;
+  }
+  
+  .az-wrap {
+      width: 700px;
+      margin: 0 auto; 
+  }
+  
+  .az-wrap-inner {
+      display: block;
+      margin: 0 auto;
+  }
+  
+  .az-zoom {
+      background: var(--black);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 800px;
+      height: 800px;
+      overflow: hidden;
+      z-index: 100;
+      display: none;
+      box-shadow: 0px 0px 25px 0 var(--black);
+    background: var(--black);
+  }
+  
+  .az-windowed {
+      overflow: hidden;
+      position: absolute;
+    cursor: crosshair;
+  }
+  
+  .az-expanded {
+      height: auto;
+      width: auto;
+      position: static;
+      overflow: visible;
+  }
+  
+  .az-coords {
+      display: none; 
+  }
+  
+  .large {
+    background: #fff0;
+  }
+  
+  .large img {
+    width: 1400px;
+    height: 1050px;
+  }
+  
+  .small img {
+    width: 700px;
+    height: 525px;
+    border-radius: 25px; 
+  }
+  
+  .az-overlay {
+    background-color: var(--black);
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    z-index: 10;
+  }
+  
+  .az-zoom {
+    border-radius: 25px; 
+  }
+  
+  .zoom {
+    display: block;
+    margin: 0 auto;
+  }

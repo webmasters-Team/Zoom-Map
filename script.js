@@ -1,0 +1,3 @@
+$("#zoom").anythingZoomer({
+	overlay : true
+});
